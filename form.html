@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <form action="/submit-form" method="post" target="_blank">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="XYZ TIWARI" required><br><br>
+            <label for="email">Email-id:</label>
+            <input type="email" id="email" placeholder="demo@gmail.com" required><br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="********" maxlength="8" required><br><br>
+            <label for="profile-picture">Profile Picture :</label>
+            <input type="file" id="profile-picture"><br><br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required><br><br>
+            <label for="Phone">Mobile Number</label>
+            <input type="tel" id="Phone" placeholder="9324370906" maxlength="10" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="color">Favourite Color :</label>
+            <input type="color" id="color"><br><br>
+            <label for="fruit">Favourite Fruit</label>
+            
+            <select name="fruit" multiple="multiple" size="4">
+                    
+                    <option value="apple">🍎</option>
+                    <option value="banana">🍌</option>
+                    <option value="watermelon">🍉</option>
+                    <option value="dragon fruit">🐉</option>
+            </select><br><br>
+            
+
+            <label for="comments">Comments :</label>
+            <textarea name="comments" id="comments" rows="3" cols="40" placeholder="Enter your feedback"></textarea><br><br>
+            <label for="checkbox">
+                <input type="checkbox" value="yes">
+                Subscribe to Newsletter
+            </label><br><br>
+            <label for="gender">
+                <input type="radio" name="gender" value="Male">
+                Male
+            </label>
+            <label for="gender">
+                <input type="radio" name="gender" value="Female">
+                Female
+            </label>
+            <label for="gender">
+                <input type="radio" name="gender" value="Other">
+                Decline to specify
+            </label><br><br>
+            <label for="skills">skills</label>
+            <input type="text" name="skills" list="skills-list" required><br><br>
+            <datalist id="skills-list">
+                <option value="HTML">HTML
+                <option value="CSS">CSS
+                <option value="JavaScript">JavaScript
+                <option value="Python">Python
+            </datalist>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
